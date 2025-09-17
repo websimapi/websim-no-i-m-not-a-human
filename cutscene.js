@@ -40,7 +40,7 @@ export async function startCutscene(){
       goNext();
     }); 
     cs.addEventListener('click', handleSkip, { once: true });
-    autoSkipTimeout = setTimeout(handleSkip, 10000);
+    autoSkipTimeout = setTimeout(handleSkip, 14000);
   };
   img.src='cutscene_landscape.png';
   const bg = getBackgroundAudio(); if(bg){ try{ bg.pause(); }catch(e){} }
